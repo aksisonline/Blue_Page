@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BLUE</title>
+    <style>
+        body {
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="randomText"></h2>
+    <script>
+        // Array of random lines
+        var randomLines = [
+            "You Live in Fairy Land",
+            "Incorrect",
+            "Wrong QR! Try again!",
+            "This is not real"
+        ];
+
+        // Get a random index
+        var randomIndex = Math.floor(Math.random() * randomLines.length);
+
+        // Display random line in h2 element
+        document.getElementById("randomText").innerText = randomLines[randomIndex];
+    </script>
+</body>
+</html>
