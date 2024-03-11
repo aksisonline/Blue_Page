@@ -1,63 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="4;url=https://forms.gle/iANYMdAEP9byqEU77">
-        <title>Redirect Page</title>
-    <title>BLUE</title>
-    <style>
-       body {
-    background-color: rgb(0, 0, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Use viewport height to fill the screen */
-    margin: 0; /* Remove default body margin */
-    font-family: Arial, sans-serif; /* Optional: Set a more common font */
-}
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Variable-Powered Clock</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'><link rel="stylesheet" href="./style.css">
 
-h1 {
-    color: white;
-    text-align: center; /* Center text in the h2 element */
-    margin-top: 20px; /* Add space above the h2 element */
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 20px; /* Add space below the image */
-}
-
-    </style>
-        
-    
 </head>
 <body>
-    <img src="eclub.png" alt="ECLUB" class="top" width="30%" >
-    <br>
-    <h1 id="randomText"></h2>
-    <br>
-    <script>
-        // Array of random lines
-        var randomLines = [
-            "You Live in Fairy Land",
-            "Incorrect",
-            "Wrong QR! Try again!",
-            "This is not real",
-            "You're on the wrong path",
-            "Choose wisely!",
-            "Are you sure about this?",
-            "Keep Dreaming... Dreamer",
-            "Don't follow the rat race"
+<!-- partial:index.partial.html -->
+<div class="clock-container">
+  <div class="clock-col">
+    <p class="clock-day clock-timer">
+    </p>
+    <p class="clock-label">
+      Day
+    </p>
+  </div>
+  <div class="clock-col">
+    <p class="clock-hours clock-timer">
+    </p>
+    <p class="clock-label">
+      Hours
+    </p>
+  </div>
+  <div class="clock-col">
+    <p class="clock-minutes clock-timer">
+    </p>
+    <p class="clock-label">
+      Minutes
+    </p>
+  </div>
+  <div class="clock-col">
+    <p class="clock-seconds clock-timer">
+    </p>
+    <p class="clock-label">
+      Seconds
+    </p>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js'></script><script  src="./script.js"></script>
 
-        ];
-
-        // Get a random index
-        var randomIndex = Math.floor(Math.random() * randomLines.length);
-
-        // Display random line in h2 element
-        document.getElementById("randomText").innerText = randomLines[randomIndex];
-    </script>
 </body>
 </html>
